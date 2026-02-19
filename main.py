@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import rust_tools
-import modules.fformat as fformat
+import fformat
 
 
 def main() -> None:
