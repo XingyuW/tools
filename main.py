@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import rust_tools
-import fformat
+import src.fformat as fformat
 
 
 def main() -> None:
@@ -22,7 +22,7 @@ def main() -> None:
     fformat.ensure_initialized()
     fig, ax = plt.subplots(figsize=(10, 6))
     ax.plot(time_axis, signal_data, linewidth=1)
-    ax.set_title("Signal Generated in Rust, Plotted in Python")
+    # ax.set_title("Signal Generated in Rust, Plotted in Python")
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("Signal Value")
     fformat.saveFig(fig, "signal_plot")
