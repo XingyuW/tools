@@ -12,10 +12,5 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["maturin>=1.7,<2.0"]
+requires = ["maturin>=1.12.4"]
 build-backend = "maturin"
-
-[tool.maturin]
-manifest-path = "rust/generator/Cargo.toml"
-module-name = "rust_tools"
-include = ["rust_tools.pyi"]

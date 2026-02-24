@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import rust_tools
+import src.signal_generator as signal_generator
 import src.fformat as fformat
 
 
@@ -10,7 +10,7 @@ def main() -> None:
     noise_sigma = 0.4
     sampling_rate = 100.0
 
-    time_axis, signal_data = rust_tools.generate_signal_with_time(
+    time_axis, signal_data = signal_generator.generate_signal_with_time(
         target_value,
         n_samples,
         majority_fraction,

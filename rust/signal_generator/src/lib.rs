@@ -63,7 +63,7 @@ fn generate_signal_with_time(
 }
 
 #[pymodule]
-fn rust_tools(_py: Python<'_>, module: &Bound<'_, PyModule>) -> PyResult<()> {
+fn signal_generator(_py: Python<'_>, module: &Bound<'_, PyModule>) -> PyResult<()> {
     module.add_function(wrap_pyfunction!(generate_centered_array, module)?)?;
     module.add_function(wrap_pyfunction!(generate_time_axis, module)?)?;
     module.add_function(wrap_pyfunction!(generate_signal_with_time, module)?)?;

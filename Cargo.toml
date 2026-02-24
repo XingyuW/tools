@@ -1,6 +1,7 @@
 [workspace]
 members = [
-  "rust/generator",
+  "rust/font_process",
+  "rust/signal_generator",
 ]
 resolver = "2"
 

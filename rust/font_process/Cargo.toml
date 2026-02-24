@@ -1,0 +1,13 @@
+[package]
+name = "font_process"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "font_process"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.28.2", features = ["extension-module", "abi3-py310"] }
+walkdir = "2"
+encoding_rs = "0.8"
