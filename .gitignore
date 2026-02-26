@@ -232,3 +232,5 @@ __marimo__/
 
 # MacOS
 .DS_Store
+figure
+data
